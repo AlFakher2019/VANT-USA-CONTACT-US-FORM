@@ -1852,5 +1852,37 @@ em {
   color: #000 !important;
 }
 .zf-form-sBox {
-  font-size: 14px; }
- 
+  font-size: 12px;
+  color: #000 !important; 
+}
+
+ .ss-option .desc {
+  font-size: 12px !important;
+  color: gray !important;
+  
+}
+.ss-option{
+  color: #000 !important;
+}
+.ss-option .desc {
+  font-size: 12px !important;
+  color: gray !important;
+  
+  display: block;        
+  line-height: 1 !important;
+}
+
+.ss-content .ss-list .ss-option .option-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; 
+}
+
+.ss-content .ss-list .ss-option .desc {
+  font-size: 12px;
+  color: gray;
+  
+  margin: 0;        
+  padding: 0;
+  line-height: 1.1;
+}

@@ -114,24 +114,7 @@
                     </label>
                     <div class="zf-tempContDiv">
                       <select class="zf-form-sBox" name="Dropdown" checktype="c1" id="reason">
-                        <option selected="true" value="-Select-">
-                          Select One Option
-                        </option>
-                        <option value="I have a question about the product">
-                          I have a question about the product <span class="description">(Device, pods, how it works, ingredients, or Benefits)</span>
-                        </option>
-                        <option value="I’m having trouble with my device">
-                          I’m having trouble with my device <span class="description">(Charging, usage, pod recognition, or performance issues)</span>
-                        </option>
-                        <option value="I want to share feedback">
-                          I want to share feedback <span class="description">(My experience with Vânt — good, bad or suggestions)</span>
-                        </option>
-                        <option value="I’m a retailer or distributor">
-                          I’m a retailer or distributor <span class="description">(Interested in stocking or selling Vânt)</span>
-                        </option>
-                        <option value="Other">
-                          Other <span class="description">(Anything else not listed above)</span>
-                        </option>
+                       
                       </select>
                       <p id="Dropdown_error" class="zf-errorMessage" style="display: none">
                         Invalid value
@@ -190,9 +173,75 @@
     var isSalesIQIntegrationEnabled = false;
     var salesIQFieldsArray = [];</script>
   <script src="https://cdn.jsdelivr.net/npm/slim-select@2.8.0/dist/slimselect.min.js"></script>
+ 
   <script>
-    new SlimSelect({
-      select: '#reason'
-    });
-  </script>
+ new SlimSelect({
+  select: '#reason',
+  allowHtml: true,
+  data: [
+    {
+      html: `
+        <div class="option-wrapper">
+          Select One Option
+        </div>
+      `,
+      text: 'Select One Option',
+      value: '-Select-',
+      selected: true
+    },
+    {
+      html: `
+        <div class="option-wrapper">
+          I have a question about the product
+          <div class="desc">(Device, pods, how it works, ingredients, or Benefits)</div>
+        </div>
+      `,
+      text: 'I have a question about the product',
+      value: 'I have a question about the product'
+    },
+    {
+      html: `
+        <div class="option-wrapper">
+          I’m having trouble with my device
+          <div class="desc">(Charging, usage, pod recognition, or performance issues)</div>
+        </div>
+      `,
+      text: 'I’m having trouble with my device',
+      value: 'I’m having trouble with my device'
+    },
+    {
+      html: `
+        <div class="option-wrapper">
+          I want to share feedback
+          <div class="desc">(My experience with Vânt — good, bad or suggestions)</div>
+        </div>
+      `,
+      text: 'I want to share feedback',
+      value: 'I want to share feedback'
+    },
+    {
+      html: `
+        <div class="option-wrapper">
+          I’m a retailer or distributor
+          <div class="desc">(Interested in stocking or selling Vânt)</div>
+        </div>
+      `,
+      text: 'I’m a retailer or distributor',
+      value: 'I’m a retailer or distributor'
+    },
+    {
+      html: `
+        <div class="option-wrapper">
+          Other
+          <div class="desc">(Anything else not listed above)</div>
+        </div>
+      `,
+      text: 'Other',
+      value: 'Other'
+    }
+  ]
+});
+
+</script>
+
 </body>
