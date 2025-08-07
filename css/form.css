@@ -77,9 +77,13 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Poppins', sans-serif;
+ font-family: 'Poppins', sans-serif;
   vertical-align: baseline;
 }
+@font-face {
+        font-family: "HW vant";
+        src: url("./HWVant-Black.otf") format("truetype");
+        font-weight:500;}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -185,7 +189,7 @@ ul {
   border: 1px solid rgba(184, 187, 211, 1);
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 5px;
   font-size: 13px;
   color: rgb(37, 44, 62);
@@ -288,7 +292,7 @@ ul {
 
 /****************template Header Ends Here****************/
 .zf-subContWrap {
-  padding: 16px 0 16px 0;
+  padding: 20px 0 20px 0;
 }
 
 .zf-tempFrmWrapper {
@@ -310,7 +314,7 @@ ul {
   padding: 9px 10px 10px 5px;
   background: #fff;
   border: 1px solid rgba(184, 187, 211, 1);
-  border-radius: 4px;
+  border-radius: 10px !important;
   font-size: 16px;
   height: 56px;
   transition: 0.3s;
@@ -851,7 +855,7 @@ ul {
 }
 
 .zf-submitColor {
-  font-family: "GreycliffCF-DemiBold";
+  
   color: #6c6d73;
   border: 1px solid transparent;
   font-weight: 600;
@@ -1757,8 +1761,10 @@ ul {
 }
 .zf-subContWrap .sub-title {
   display: block;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.8;
+  font-family: "HW vant"!important;
+  font-weight: 500;
   color: #101114;
   margin: 16px 0 0;
 }
