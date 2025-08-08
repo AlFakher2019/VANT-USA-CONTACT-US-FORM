@@ -176,7 +176,7 @@ ul {
 }
 .zf-templateWidth {
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 0px 20px;
   max-width: 880px;
   width: 100%;
   box-sizing: border-box;
@@ -186,7 +186,7 @@ ul {
 .zf-tempContDiv textarea,
 .zf-tempContDiv .zf-pdfTextArea {
   background: #fff;
-  border: 1px solid rgba(184, 187, 211, 1);
+  border: 1px solid #9C9EA3;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 10px;
@@ -292,7 +292,7 @@ ul {
 
 /****************template Header Ends Here****************/
 .zf-subContWrap {
-  padding: 20px 0 20px 0;
+  padding: 0px 0 20px 0;
 }
 
 .zf-tempFrmWrapper {
@@ -313,7 +313,7 @@ ul {
 .zf-form-sBox {
   padding: 9px 10px 10px 5px;
   background: #fff;
-  border: 1px solid rgba(184, 187, 211, 1);
+  border: 1px solid #9C9EA3 !important;
   border-radius: 10px !important;
   font-size: 16px;
   height: 56px;
@@ -1868,12 +1868,12 @@ em {
   color: #000 !important;
 }
 .zf-form-sBox {
-  font-size: 12.5px;
+  font-size: 12.8px;
   color: #000 !important; 
 }
 
  .ss-option .desc {
-  font-size: 12px !important;
+  font-size: 12.8px !important;
   color: gray !important;
   
 }
