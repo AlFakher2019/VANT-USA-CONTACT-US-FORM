@@ -82,7 +82,7 @@ video {
 }
 @font-face {
         font-family: "HW vant";
-        src: url("./HWVant-Black.otf") format("truetype");
+        src: url("./HWVant-Bold.woff2") format("truetype");
         font-weight:500;}
 
 body {
