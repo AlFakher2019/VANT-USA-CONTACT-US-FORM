@@ -253,4 +253,22 @@
 
 </script>
 
+<script>
+  function sendHeightToParent() {
+    var height = document.body.scrollHeight;
+    window.parent.postMessage({ iframeHeight: height }, '*');
+  }
+
+  // Send height on load
+  window.addEventListener('load', sendHeightToParent);
+
+  // Send height when resizing
+  window.addEventListener('resize', sendHeightToParent);
+
+  // Optional: observe DOM changes (e.g., dropdown expands)
+  var observer = new MutationObserver(sendHeightToParent);
+  observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+</script>
+
 </body>
+</html>
